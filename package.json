@@ -41,6 +41,7 @@
 		"slate-react": "0.22.9",
 		"slate-soft-break": "0.9.0"
 	},
+	"main": "dist/bundle.js",
 	"description": "Material UI implementation of react-jsonschema-form",
 	"devDependencies": {
 		"@babel/core": "7.9.0",
@@ -109,7 +110,6 @@
 		"webpack-hot-middleware": "2.25.0"
 	},
 	"license": "ISC",
-	"main": "index.js",
 	"name": "react-jsonschema-form-material-ui",
 	"peerDependencies": {
 		"@material-ui/core": "^4.9.9",
