@@ -89,46 +89,47 @@ class Form extends React.Component {
   }
 
   render() {
-    const { 
-      classes, 
-      formData, 
+    const {
+      classes,
+      formData,
       onUpload,
-      onSubmit, 
-      formButtons, 
-      actionButtonPos, 
-      onChange, 
-      onCancel, 
+      onSubmit,
+      formButtons,
+      actionButtonPos,
+      onChange,
+      onCancel,
       activityIndicatorEnabled,
       submitValue,
       cancelValue,
       inProgressValue,
-      disabled, 
+      disabled,
       cancelVariant,
       submitVariant,
-      ...rest 
+      ...rest
     } = this.props;
     const { validation, id } = this.state;
+    // return (<div>wwww</div>)
     return (
       <MuiPickersUtilsProvider utils={MomentUtils}>
         <Paper className={classes.root}>
           {
-            (actionButtonPos === 'top') 
+            (actionButtonPos === 'top')
               ? (
-                  <FormButtons 
+                  <FormButtons
                     onSubmit={(callback) => this.onSubmit(callback)}
-                    submitValue={submitValue} 
+                    submitValue={submitValue}
                     inProgressValue={inProgressValue}
-                    disabled={disabled} 
+                    disabled={disabled}
                     onCancel={onCancel}
-                    cancelValue={cancelValue} 
+                    cancelValue={cancelValue}
                     cancelVariant={cancelVariant}
                     submitVariant={submitVariant}
-                    classes={classes} 
+                    classes={classes}
                     activityIndicatorEnabled={activityIndicatorEnabled}
                   />
               )
               : null
-            
+
           }
           <ValidationMessages validation={validation} />
           <UploadContext.Provider value={onUpload}>
@@ -148,22 +149,22 @@ class Form extends React.Component {
             />
           </UploadContext.Provider>
           {
-            (!actionButtonPos) 
+            (!actionButtonPos)
               ? (
                   <FormButtons
                     onSubmit={(callback) => this.onSubmit(callback)}
                     disabled={disabled}
                     submitValue={submitValue}
-                    cancelValue={cancelValue} 
+                    cancelValue={cancelValue}
                     onCancel={onCancel}
                     cancelVariant={cancelVariant}
                     submitVariant={submitVariant}
-                    classes={classes} 
+                    classes={classes}
                     activityIndicatorEnabled={activityIndicatorEnabled}
                   />
               )
               : null
-            
+
           }
         </Paper>
       </MuiPickersUtilsProvider>
