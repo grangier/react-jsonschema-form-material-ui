@@ -6,7 +6,7 @@
         },
         "bugs": {
           "url": "https://github.com/vip-git/react-jsonschema-form-material-ui/issues"
-        },	
+        },
 	"scripts": {
 		"build": "webpack",
 		"build:demo": "cross-env NODE_ENV=production webpack --env.NODE_ENV=production --config webpack.config.demo.js",
@@ -111,13 +111,13 @@
 	"main": "index.js",
 	"name": "react-jsonschema-form-material-ui",
 	"peerDependencies": {
-		"react": "16.13.1",
-		"react-dom": "16.13.1",
-		"@material-ui/core": "4.9.8",
-		"@material-ui/icons": "4.9.1",
-		"@material-ui/pickers": "3.2.10",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"@material-ui/core": "^4.9.8",
+		"@material-ui/icons": "^4.9.1",
+		"@material-ui/pickers": "^3.2.10",
 		"immutability-helper": "^2.6.5 || ^3.0.0",
-		"shortid": "2.2.15"
+		"shortid": "^2.2.15"
 	},
 	"version": "2.0.15"
 }
